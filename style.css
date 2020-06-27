@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+body,html{
+  height: 100%;
+  margin: 0%;
+}
+
+\\ Imagem de Fundo
+.bg{
+  background-image: url("img/Tecnologia.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.bg{
+  background-image: url("img/music.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+
+
+\\ Imagem de Fundo_Relatório
+#lista{
+  background-image: url("img/book_exercicio.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+\\imagem_faculdade
+#container {
+  width: 1200px;
+  min-height: 1100px;
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid #462e01;
+}
+
+\\Formulário_Contato
+body{
+margin: 0;
+padding: 0;
+}
+
+form{
+font-size: 16px;
+background: #CCC;
+max-width: 500px;
+margin: 0 auto;
+padding: 0 10px 10px 10px;
+
+}
+
+h1{
+color: #333
+}
+
+input, textarea{
+width: 474px;
+padding: 10px;
+}
+
+.enviar input {
+background-color: #069;
+height: 40px;
+width: 150px;
+font-weight: bold;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border: 1px solid;
+color: #FFF;
+cursor: pointer;
+}
+
+.enviar input:hover{
+background: #078;
+}
+
+textarea {
+width: 474px;
+height: 120px;
+line-height: 20px;
+}
+
+.pag_sobre {
+  width: 300px;
+  height: 200px;
+}
