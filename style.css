@@ -2,6 +2,7 @@
 *{
   padding: 0;
   margin: 0;
+  max-width: 100%;
   list-style: none;
   text-decoration: none;
 }
@@ -10,8 +11,8 @@ body {
 }
 .sidebar {
   position: fixed;
-  left: -250px;
-  width: 250px;
+  left: auto;
+  width: 300px;
   height: 100%;
   background: #042331;
   transition: all .5s ease;
@@ -48,7 +49,7 @@ ul li:hover a{
 }
 label #btn,label #cancel{
   position: absolute;
-  background: #042331;
+  background: black;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -56,7 +57,7 @@ label #btn{
   left: 40px;
   top: 25px;
   font-size: 35px;
-  color: white;
+  color: White;
   padding: 6px 12px;
   transition: all .5s;
 }
@@ -64,8 +65,8 @@ label #cancel{
   z-index: 1111;
   left: -195px;
   top: 17px;
-  font-size: 30px;
-  color: #0a5275;
+  font-size: 35px;
+  color: white;
   padding: 4px 9px;
   transition: all .5s ease;
 }
@@ -93,7 +94,7 @@ section{
 
 body,html{
   height: 100%;
-  margin: 0%;
+  background-size: 100% 100%;
 }
 
 \\ Imagem de Fundo
@@ -131,6 +132,7 @@ body,html{
 #container {
   width: 1200px;
   min-height: 1100px;
+  background-size: 100% 100%;
   background-color: aquamarine;
   margin-left: auto;
   margin-right: auto;
@@ -141,8 +143,10 @@ body,html{
 
 \\Formulário_Contato
 body{
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  background-color: black;
 }
 
 form{
@@ -151,6 +155,7 @@ background: #CCC;
 max-width: 500px;
 margin: 0 auto;
 padding: 0 10px 10px 10px;
+background-size: 100% 100%;
 
 }
 
